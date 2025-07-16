@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color_primario: #ff6600;
+    --color_secundario: #252525;
+    --color_negro: #000;
+    --color_blanco: #fff;
+    /* TAMAÑOS */
+    --ancho_maximo: 1920px;
+    --padding_izquierda_derecha: 20px;
+    --padding_arriba_abajo: 100px;
+    --altura_header: 80px;
+    /* TAMAÑOS DE FUENTE */
+    --titulo_h1: clamp(1rem, 7vw, 2.6rem);
+    --titulos_h2: clamp(1.2rem, 5.6vw, 2rem);
+    --subtitulo_seccion_principal: clamp(1.1rem, 4vw, 2rem);
+    --parrafo_seccion_principal: clamp(0.6rem, 2.3vw, 1.1rem);
+    --parrafo_secciones: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: var(--color_negro);
+}
+
+.titulos_secciones {
+    font-size: var(--titulos_h2);
+    color: var(--color_primario);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*NAVBAR*/
+nav {
+    background: var(--color_negro);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: var(--color_primario);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: var(--color_blanco);
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+a.active, a:hover {
+    background: var(--color_primario);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: var(--color_blanco);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*Seccion Inicio*/
+.seccion_inicio {
+    background-color: var(--color_negro);
+}
+
+.seccion_principal_article {
+    text-align: center;
+    background-color: var(--color_negro);
+    margin: 70px;
+}
+
+.seccion_principal_h2 {
+    color: var(--color_primario);
+    font-size: var(--titulos_h2);
+}
+
+.seccion_principal_h3 {
+    font-size: var(--subtitulo_seccion_principal);
+    color: var(--color_blanco);
+}
+
+.seccion_principal_p {
+    font-size: var(--subtitulo_seccion_principal);
+    color: var(--color_blanco);
+    margin: 15px 0;
+}
+
+.btn_contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton {
+    background-color: var(--color_primario);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: var(--color_negro);
+}
+
+/*SOBRE MI*/
+.seccion_principal {
+    background-color: var(--color_secundario);
+}
+
+.article_sobreMi {
+    padding: 70px;
+}
+
+.parrafo_sobreMi {
+    color: var(--color_blanco);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*EDUCACIÓN*/
+.seccion_educacion {
+    background-color: var(--color_negro);
+    padding: 70px 0px 70px 0px;
+}
+.div_educacion {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.imagen_educacion {
+    width: 40vw;
+    height: 16vw;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.imagen_educacion:hover{
+    transform: scale(1.03);
+}
+.parrafo_educacion {
+    color: var(--color_blanco);
+    font-size: var(--parrafo_secciones);
+}
+
+/*EXPERIENCIA*/
+.seccion_experiencia {
+    background-color: var(--color_secundario);
+    padding: 70px 0px 70px 0px;
+}
+.div_experiencia {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.parrafo_exp_1 {
+    color: var(--color_primario);
+    font-weight: 800;
+}
+.imagen_experiencia {
+    width: 40vw;
+    height: 15vw;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.subtitulo_experiencia {
+    color: var(--color_blanco);
+}
+.parrafo_experiencia {
+    color: var(--color_blanco);
+
+}
+/*PORTAFOLIO*/
+.seccion_portafolio {
+    background-color: var(--color_negro);
+    padding: 70px 30px 70px 30px;
+}
+.div_portafolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.imagen_portafolio {
+    width: 33vw;
+    height: 18vw;
+    border-radius: 20px;
+}
+.portafolio_dos {
+    text-align: center;
+}
+.parrafo_portafolio {
+    color: var(--color_blanco);
+    font-size: var(--parrafo_secciones);
+}
+.btn_portafolio{
+    background-color: var(--color_primario);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: var(--color_negro);
+    transform: scale(1.03);
+}
+.btn_portafolio:hover{
+    background-color: var(--color_blanco);
+    color: var(--color_primario);
+    transition: .5s;
+}
+.separar_boton {
+    display: flex;
+    padding: 15px 0px 0px 0px;
+    justify-content: center;
+}
+/*CONTACTO*/
+.seccion_contacto {
+    background-color: var(--color_secundario);
+    padding: 70px 30px 70px 30px;
+}
+.div_contacto {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo_contacto {
+    color: var(--color_blanco);
+    text-align: center;
+    font-size: var(--parrafo_secciones);
+}
+.div_iconos {
+    display: flex;
+    gap: 90px;
+    font-size: 50px;
+
+}
+.iconos_contacto {
+    color: var(--color_blanco);
+    cursor: pointer;
+    background-color: var(--color_secundario);
+}
+
+
+/*FOOTER*/
+.contenedorFinal{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color_negro);
+    color: var(--color_blanco);
+    font-size: var(--parrafo_secciones);
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+}
+.link_final{
+    text-decoration: none;
+    color: var(--color_primario);
+}
+.link_final:hover{
+    background-color: var(--color_blanco);
+    color: var(--color_negro);
+}
+
+
+
+/*MEDIAQUERY PARA MOVIL*/
+@media (max-width: 1250px) {
+
+    /*NAVBAR*/
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1209px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.781);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+@media (max-width: 775px) {
+/*EDUCACION*/
+    .parrafo_educacion {
+        color: var(--color_blanco);
+        font-size: 3vw;
+    }
+    .div_educacion {
+    display: flex;
+    padding: 0 0 0px 0px;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+    }
+/*EXPERIENCIA*/
+    .div_experiencia {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 60px;
+        margin: 0 35px 0 35px;
+}
+
+}
+@media (max-width: 499px){
+/*PORTAFOLIO*/
+    .portafolio_uno {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+/*NAVBAR*/
+    label.logo {
+        font-size: 25px;
+        padding: 36px 0px 36px 36px;
+    }
+/*CONTACTO*/
+    .div_iconos {
+        display: flex;
+        gap: 40px;
+        font-size: 50px;
+}
+}
