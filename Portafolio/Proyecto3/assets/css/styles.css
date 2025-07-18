@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*seccion*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url(../imgs/img-header.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.logoImagen{
+    width: 150px;
+    height: 150px;
+}
+
+.contenedorProductos {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.contenido{
+    text-align: end;
+    list-style-type: none
+}
+.reloj-venta {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: auto;
+
+}
+.reloj-venta img {
+    width: 150px;
+    height: 145px;
+    position: absolute;
+    padding: 0px 0px 0px 51px;
+}
+.reloj-venta h2 {
+    margin-top: 0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}

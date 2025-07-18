@@ -6,16 +6,10 @@
     --color_secundario: #252525;
     --color_negro: #000;
     --color_blanco: #fff;
-    /* TAMAÑOS */
-    --ancho_maximo: 1920px;
-    --padding_izquierda_derecha: 20px;
-    --padding_arriba_abajo: 100px;
-    --altura_header: 80px;
     /* TAMAÑOS DE FUENTE */
     --titulo_h1: clamp(1rem, 7vw, 2.6rem);
     --titulos_h2: clamp(1.2rem, 5.6vw, 2rem);
     --subtitulo_seccion_principal: clamp(1.1rem, 4vw, 2rem);
-    --parrafo_seccion_principal: clamp(0.6rem, 2.3vw, 1.1rem);
     --parrafo_secciones: clamp(1.2rem, 2.5vw, 1.4rem);
 }
 
@@ -26,7 +20,9 @@
     list-style: none;
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Fira Sans", sans-serif;
     background-color: var(--color_negro);
@@ -229,12 +225,10 @@ a.active, a:hover {
     font-weight: bold;
     padding: 5px 15px;
     color: var(--color_negro);
-    transform: scale(1.03);
 }
 .btn_portafolio:hover{
     background-color: var(--color_blanco);
     color: var(--color_primario);
-    transition: .5s;
 }
 .separar_boton {
     display: flex;

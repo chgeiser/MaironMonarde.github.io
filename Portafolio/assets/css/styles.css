@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color_primario: #ff6600;
+    --color_secundario: #252525;
+    --color_negro: #000;
+    --color_blanco: #fff;
+    /* TAMAÑOS DE FUENTE */
+    --titulo_h1: clamp(1rem, 7vw, 2.6rem);
+    --titulos_h2: clamp(1.2rem, 5.6vw, 2rem);
+    --subtitulo_seccion_principal: clamp(1.1rem, 4vw, 2rem);
+    --parrafo_secciones: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+body{
+    font-family: "Fira Sans", sans-serif;
+    background-color: var(--color_negro);
+}
+.titulo-seccion{
+    color: var(--color_primario);
+    font-size: var(--titulo_h1);
+    font-weight: bold;
+}
+/*NAVBAR*/
+.barra-navegacion{
+    background-color: var(--color_negro);
+}
+.texto-logo-nav{
+    color: var(--color_primario);
+    text-decoration: none;
+    font-size: var(--titulos_h2);
+    font-weight: 700;
+}
+.texto-logo-nav:hover {
+    color: var(--color_blanco);
+}
+.texto-botones-nav{
+    color: var(--color_blanco);
+    font-weight: 400;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--color_primario);
+}
+.boton-navbar{
+    color: var(--color_blanco);
+}
+.boton-navbar:hover{
+    color: var(--color_primario);
+}
+.icono-seccion{
+    color: var(--color_primario);
+    font-size: var(--titulo_h1);
+}
+/*PORTAFOLIO*/
+.cont-desc-proyecto{
+    background-color: var(--color_negro);
+}
+.imagen-card{
+    height: 384px;
+}
+.cards-edit {
+    border-color: var(--color_primario);
+    border-width: 3px;
+    border-radius: 10px;
+}
+.titulo-proyecto{
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--color_blanco);
+}
+.img-tecnologia{
+    width: 40px;
+    height: 40px;
+}
+.boton-ir{
+    background-color: #ff6600;
+    color: var(--color_blanco);
+
+}
+.boton-ir:hover{
+    background-color: var(--color_secundario);
+    color: var(--color_blanco);
+}
+.link-proyecto{
+    text-decoration: none;
+    color: var(--color_blanco);
+}
+/* SOBRE MI */
+.contenedorForm{
+    background-color: var(--color_secundario);
+}
+.contenido-sobre-mi {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    margin: 0 0 10px 0px;
+}
+.imagen-sobremi{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 160px;
+}
+/*CONTACTO*/
+.seccion-contacto {
+    background-color: var(--color_negro);
+    padding: 30px 30px 30px 30px;
+}
+.div-contacto {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo-contacto {
+    color: var(--color_blanco);
+    text-align: center;
+    font-size: var(--parrafo_secciones);
+}
+.div-iconos {
+    display: flex;
+    gap: 90px;
+    font-size: 50px;
+
+}
+.iconos-contacto {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.iconos-contacto:hover{
+    color: var(--color_primario);
+}
+/* FOOTER */
+.tituloFooter{
+    color: var(--color_primario);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.textoFooter{
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: var(--color_blanco);
+}
+@media (max-width: 767px) {
+/*SOBRE MI*/
+    .contenido-sobre-mi {
+        flex-direction: column;
+        gap: 0;
+        margin: 0px 0px 0px 0px;
+    }
+    .contenido-imagen-sobremi {
+        text-align: center;
+        padding: 22px 0px 0px 0px;
+    }
+    .imagen-sobremi {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 160px;
+        margin: 12px 0 0 0;
+    }
+    .texto-sobremi {
+    padding: 10px 0 0 0px;
+    text-align: center;
+    }
+}
+@media (max-width: 420px) {
+/* CONTACTO */
+    .div-contacto {
+    gap: 0px;
+    }
+    .div-iconos {
+    gap: 60px;
+    }
+    
+}

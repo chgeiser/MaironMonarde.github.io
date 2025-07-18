@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.barraNavegacion{
+    background-color: #28a745;
+}
+.textoNavBar{
+    padding: 0rem 0rem 0rem 2rem;
+    font-size: 34px;
+    font-weight: 900;
+}
+.botonesNavBar{
+    padding: 0rem 26px 0rem 0rem;
+}
+.descCard{
+    font-size: 27px;
+    font-weight: 300;
+    color: #212529;
+}
+.nombreHotel{
+    margin: 0rem 0rem 0rem 0rem;
+    font-size: 21px;
+    font-weight: 300;
+    color: #707070;
+    
+}
+.iconoCard{
+    padding: 0px 4px 0px 0px;
+    color: #707070;
+}
+.descUbi{
+    font-size: 17px;
+    font-weight: 300;
+    color: #707070;
+}
+.contValores{
+    display: flex;
+    justify-content: flex-end;
+}
+.valor1{
+    padding: 1rem 0rem 0rem 0rem;
+    font-size: 19px;
+    font-weight: 300;
+    color: #707070;
+    
+}
+.valor2{
+    padding: 11px 0px 0rem 7px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #28a745
+}
+.contenedorForm{
+    background-color: #28a745;
+}
+div form h4{
+    color:#fff;
+}
+.textoForm{
+    font-size: 28px;
+    font-weight: 500;
+}
+.botonEnviar{
+    width: 100px;
+    font-weight: 500;
+}
+.footerFinal{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.descripcionFooter{
+    display: inline;
+}
+.tituloFooter{
+    font-size: 32px;
+    font-weight: 900;
+}
+.textoFooter{
+    font-size: 21px;
+    font-weight: 300;
+    color: #707070;
+}
