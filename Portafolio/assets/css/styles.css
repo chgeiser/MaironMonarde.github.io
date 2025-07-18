@@ -57,7 +57,7 @@ body{
     background-color: var(--color_negro);
 }
 .imagen-card{
-    height: 384px;
+    height: 200px;
 }
 .cards-edit {
     border-color: var(--color_primario);
